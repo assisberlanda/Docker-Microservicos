@@ -3,13 +3,13 @@
 
 #### [Docker-Compose](https://github.com/docker/awesome-compose?tab=readme-ov-file)
 
-### Criando um Cluster
+### 🆑 Criando um Cluster
     docker service create --name web-server --replicas 10 -p 80:80 httpd
     docker service ps web-server 
     docker node update --availability drain aws1
     docker service rm web-server
 
-### Executando um contêiner
+### ✨ Executando um contêiner
     docker pull ubuntu
     docker run ubuntu
     docker run ubuntu sleep 10
@@ -25,7 +25,7 @@
     docker rm [id]
     docker rmi [imagem]
     docker run -dti --name Ubuntu-A ubuntu
-### Copiando arquivos para o contêiner
+### ❗️ Copiando arquivos para o contêiner
     docker exec -ti Ubuntu-A /bin/bash
     docker exec Ubuntu-A mkdir /destino/
     docker exec Ubuntu-A mkdir ls -l /
@@ -38,7 +38,7 @@
     docker run -e MYSQL_ROOT_PASSWORD=Senha123 --name mysql-A -d -p 3306:3306 mysql
     docker exec -it mysql-A bash
     mysql -u root -p --protocol=tcp
-## 🆑 Acessando um container externamente
+## 🌎 Acessando um container externamente
     CREATE DATABASE aula;
     show databases;
     docker inspect mysql-A
