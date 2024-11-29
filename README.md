@@ -68,6 +68,3 @@ Posso conectar ao Banco de Dados, sem a necessidade de entrar dentro do meu cont
     docker run -dti --mount type=volume,src=teste,dst=teste debian
     docker run  --name apache-A -d -p 80:80 --volume=/data/apache-A:/usr/local/apache2/htdocs/ httpd
     docker run  --name php-A -d -p 8080:80 --volume=/data/php-A:/var/www/html php:7.4-apache
-
-#
-🌎☁️🧩📌❇️💡❗️🆑✅🔗⌨️🔴☑️🔗🐳🔥🚀🚧🚦⚙️⚠️🌐✨
